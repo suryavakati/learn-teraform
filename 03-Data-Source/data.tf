@@ -6,7 +6,7 @@ data "aws_ami" "ami" {
   
 }
 
-output "sample" "sample1" {
+output "sample" {
     value=data.aws_ami.ami.image_id
-    value1=data.aws_ami.ami.vpc_security_group_ids
+    
 }
